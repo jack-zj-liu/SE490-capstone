@@ -1,0 +1,18 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © q888888
+
+//@version=5
+indicator(title="my super fancy script", shorttitle='msfs', overlay=true, precision=5)
+
+candleOpen = open
+candleHigh = high
+candleLow = low
+candleClose = close
+
+candleSize = high-low
+
+plot(candleOpen, color=color.blue)
+plot(candleHigh, color=color.red)
+plot(candleLow, color=color.green)
+plot(candleClose, color=color.purple)
+plot(candleSize, color=color.orange)
